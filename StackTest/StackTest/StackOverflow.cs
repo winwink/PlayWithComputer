@@ -16,15 +16,15 @@ namespace StackTest
         public long Calc(long n)
         {
             if (n == 0) return 0;
+            
             if (n % 100 == 0)
             {
                 Console.WriteLine(n);
                 Console.WriteLine(Environment.StackTrace.Length);
             }
 
-            return n + Calc(n - 1);
+            return n+ Calc(n - 1);
         }
-
       
     }
 }
